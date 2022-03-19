@@ -1,0 +1,83 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "../fonts/fonts.css";
+
+* {
+  color: #000000;
+  font-family: Montserrat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.bg-peach {
+  background-color: #ffe1bd;
+}
+
+.f-8 {
+  font-size: 8rem;
+}
+
+.align-justify-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #272626;
+  border-radius: 12px;
+}
+
+.form-control {
+  background-color: #ced4da;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+.vh-75 {
+  min-height: 75vh;
+}
+.vh-50 {
+  min-height: 50vh;
+}
+.vh-25 {
+  min-height: 25vh;
+}
+
+@media screen and (max-width: 767px) {
+  .f-8 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 767px) {
+  .w-md-100 {
+    width: 100% !important;
+  }
+  .w-md-75 {
+    width: 75% !important;
+  }
+  .w-md-50 {
+    width: 50% !important;
+  }
+  .h-md-100 {
+    height: 100% !important;
+  }
+  .h-md-75 {
+    height: 75% !important;
+  }
+  .h-md-50 {
+    height: 50% !important;
+  }
+  .vh-md-100 {
+    min-height: 100vh !important;
+  }
+  .vh-md-50 {
+    min-height: 50vh !important;
+  }
+}
