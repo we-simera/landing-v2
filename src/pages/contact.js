@@ -1,8 +1,24 @@
-import React from "react"
+import React, { useRef } from "react"
 import TextField from "@mui/material/TextField"
 import Layout from "../components/Layout"
 
 export default function Contact() {
+  const buttonRef = useRef(null)
+  const msgRef = useRef(null)
+
+  function handleSubmit() {
+    buttonRef.current.disabled = true
+    buttonRef.current.innerText = "Sending..."
+    setTimeout(() => {
+      buttonRef.current.disabled = false
+      buttonRef.current.innerText = "Contact Us"
+      msgRef.current.innerText = "Message Sent!"
+      setTimeout(() => {
+        msgRef.current.innerText = ""
+      }, 3000)
+    }, 2000)
+  }
+
   return (
     <Layout>
       <section className="d-flex align-items-center justify-content-center vh-75">
@@ -54,17 +70,22 @@ export default function Contact() {
               className="mt-2 w-100"
             />
             <br />
-            <button
-              type="button"
-              className="btn mt-3"
-              style={{
-                backgroundColor: "#0a0a0a",
-                color: "#fff",
-                borderRadius: "50px",
-              }}
-            >
-              Contact US
-            </button>
+            <div className="d-flex align-items-center">
+              <button
+                ref={buttonRef}
+                type="button"
+                className="btn mt-3"
+                onClick={handleSubmit}
+                style={{
+                  backgroundColor: "#0a0a0a",
+                  color: "#fff",
+                  borderRadius: "50px",
+                }}
+              >
+                Contact Us
+              </button>
+              <p className="mb-0 mt-3 ms-3" ref={msgRef}></p>
+            </div>
           </div>
         </div>
       </section>
