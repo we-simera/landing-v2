@@ -1,35 +1,25 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Box from "@mui/material/Box"
-import ImageList from "@mui/material/ImageList"
-import ImageListItem from "@mui/material/ImageListItem"
+import { ImageList, ImageListItem } from "@mui/material"
 
 export default function Home() {
   return (
     <Layout>
-      <section className="d-flex justify-content-center align-items-center vh-75">
-        <div className="text-center p-5">
-          <h5 className="mb-5">our designs.</h5>
-        </div>
-        <Box sx={{ width: 500, height: 450, overflowY: "scroll" }}>
-          <ImageList variant="masonry" cols={3} gap={8}>
-            {itemData.map(item => {
-              let Img =
-                require(`../assets/images/commercial/${item.img}`).default
-              return (
-                <ImageListItem key={item.img}>
-                  <img
-                    src={`${Img}?w=248&fit=crop&auto=format`}
-                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                    alt={item.title}
-                    loading="lazy"
-                  />
-                </ImageListItem>
-              )
-            })}
-          </ImageList>
-        </Box>
-      </section>
+      <ImageList variant="masonry" cols={3} gap={8}>
+        {itemData.map(item => {
+          let Img = require(`../assets/images/commercial/${item.img}`).default
+          return (
+            <ImageListItem key={item.img}>
+              <img
+                src={`${Img}?w=248&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+              />
+            </ImageListItem>
+          )
+        })}
+      </ImageList>
     </Layout>
   )
 }
@@ -40,7 +30,6 @@ const itemData = [
     title: "com1",
   },
   { img: "track.jpg", title: "track" },
-
   { img: "astro1.jpg", title: "astro" },
   { img: "comm3.jpg", title: "comm3" },
   { img: "comm4.jpg", title: "comm4" },
