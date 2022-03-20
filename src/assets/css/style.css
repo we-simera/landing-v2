@@ -14,26 +14,9 @@ body {
   background-color: #fafafa;
 }
 
-.bg-peach {
-  background-color: #ffe1bd;
-}
-
-.f-8 {
-  font-size: 8rem;
-}
-
 .align-justify-center {
   align-items: center;
   justify-content: center;
-}
-
-.card {
-  background-color: #272626;
-  border-radius: 12px;
-}
-
-.form-control {
-  background-color: #ced4da;
 }
 
 .vh-100 {
@@ -47,12 +30,6 @@ body {
 }
 .vh-25 {
   min-height: 25vh;
-}
-
-@media screen and (max-width: 767px) {
-  .f-8 {
-    font-size: 5rem;
-  }
 }
 
 @media (min-width: 767px) {
