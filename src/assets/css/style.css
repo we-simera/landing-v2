@@ -66,4 +66,7 @@ body {
   .vh-md-50 {
     min-height: 50vh !important;
   }
+  .pl-md-8 {
+    padding-left: 8rem;
+  }
 }

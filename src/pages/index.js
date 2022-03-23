@@ -8,7 +8,7 @@ export default function Home() {
     <Layout>
       <Wave />
       <section className="vh-100 d-flex">
-        <div className="h-100 w-100 d-none d-md-flex align-justify-center">
+        <div className="h-100 w-100 d-none d-md-flex align-items-center pl-md-8">
           <img src={Logo} alt="Simera" height="auto" width="300rem" />
         </div>
 
