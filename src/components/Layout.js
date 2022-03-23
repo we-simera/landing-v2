@@ -1,10 +1,11 @@
 import React from "react"
 import "../assets/css/style.css"
+import FadeIn from "components/FadeIn"
 
 export default function Layout({ children }) {
   return (
     <>
-      <section className="">{children}</section>
+      <FadeIn>{children}</FadeIn>
     </>
   )
 }
