@@ -3,9 +3,5 @@ import "assets/css/style.css"
 import FadeIn from "components/FadeIn"
 
 export default function Layout({ children }) {
-  return (
-    <>
-      <FadeIn>{children}</FadeIn>
-    </>
-  )
+  return <>{children}</>
 }
