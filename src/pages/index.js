@@ -33,8 +33,8 @@ export default function Home() {
           <div className="text-center">
             <h2 className="mb-3">Reach Us</h2>
             <div className="d-md-flex">
-              <p className="me-5 text-muted">simera.digital@gmail.com</p>
-              <p className="me-3 text-muted">+91 97907 66522</p>
+              <p className="me-md-5 text-muted">simera.digital@gmail.com</p>
+              <p className="me-md-3 text-muted">+91 97907 66522</p>
               <p className="text-muted">+91 87544 62663</p>
             </div>
           </div>
