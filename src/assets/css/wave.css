@@ -1,6 +1,6 @@
 .wave-section {
   transform: rotate(90deg);
-  width: 98%;
+  width: 100%;
 }
 .wave {
   position: absolute;
@@ -35,6 +35,45 @@
   animation-delay: -5s;
   bottom: 10px;
 }
+
+.wave-section-2 {
+  transform: rotate(-90deg);
+  width: 100%;
+}
+.wave-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: -250px;
+  width: 100%;
+  height: 100px;
+  filter: invert(50%) sepia(100%) saturate(5268%) hue-rotate(163deg)
+    brightness(109%) contrast(155%);
+  background: url(https://i.postimg.cc/YqcvK11W/wave.png);
+  background-size: 1000px 100px;
+}
+.wave-2.wave2 {
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+.wave-2.wave3 {
+  animation: animate3 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: 2s;
+  bottom: 15px;
+}
+.wave-2.wave4 {
+  animation: animate2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
 @keyframes animate {
   0% {
     background-position-x: 0;
@@ -49,11 +88,5 @@
   }
   100% {
     background-position-x: -1000px;
-  }
-}
-
-@media (max-width: 767px) {
-  .wave-section {
-    width: 100%;
   }
 }
