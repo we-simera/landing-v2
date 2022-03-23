@@ -1,17 +1,14 @@
 import React from "react"
 import Logo from "assets/images/simera-logo.svg"
 import Layout from "components/Layout"
+import Wave from "components/Wave"
 
 export default function Home() {
   return (
     <Layout>
+      <Wave />
       <section className="vh-100 d-flex">
-        <div
-          className="h-100 w-100 d-none d-md-flex align-justify-center"
-          style={{
-            boxShadow: "9px 9px 17px 0px rgba(137,209,211,0.55)",
-          }}
-        >
+        <div className="h-100 w-100 d-none d-md-flex align-justify-center">
           <img src={Logo} alt="Simera" height="auto" width="300rem" />
         </div>
 
