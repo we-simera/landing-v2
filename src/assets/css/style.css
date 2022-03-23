@@ -1,8 +1,14 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "../fonts/fonts.css";
 
+/* 
+  color1: #89d1d3;
+  color2: #004951;
+  color3: #082335;
+ */
+
 * {
-  color: #000000;
+  color: #f8f8f8;
   font-family: Montserrat;
 }
 
@@ -11,7 +17,7 @@ html {
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #050505;
 }
 
 .align-justify-center {
@@ -53,6 +59,9 @@ body {
   }
   .vh-md-100 {
     min-height: 100vh !important;
+  }
+  .vh-md-75 {
+    min-height: 75vh !important;
   }
   .vh-md-50 {
     min-height: 50vh !important;
