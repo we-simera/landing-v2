@@ -20,7 +20,7 @@ export default function Home() {
 
             <div className="text-center mt-5 mt-md-0">
               <h1 className="mb-3">we-símera</h1> {/* WE-SÍMERA */}
-              <p className="text-muted">
+              <p className="text-muted px-3 px-sm-5 px-md-0">
                 At Símera, we create visual concepts, to communicate ideas that
                 inspire, inform, or captivate consumers. We develop the overall
                 layout and production design for advertisements, brochures,
